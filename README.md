@@ -25,6 +25,8 @@ BCrypt login, **JWT issuing**, and account **deactivation as soft delete**.
 
 ## Run
 
+> **Prerequisite:** this repo depends on `com.medicore:medicore-common:1.0.0`. Install it to your local Maven repo first — clone [medicore-common](https://github.com/Vamshikrishna720/medicore-common) and run `mvn clean install` there. CI has the same requirement (publishing common to GitHub Packages would make this repo fully self-contained).
+
 ```bash
 mvn spring-boot:run          # :8081 (needs MySQL + Eureka, see application.yml)
 ```
